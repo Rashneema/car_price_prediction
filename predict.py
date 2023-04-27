@@ -13,7 +13,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score,mean_absolute_error,mean_squared_log_error,mean_squared_error
 import numpy as np
 # Define the 'prediction()' function.
-@st.cache_data
+
 def prediction(car_df, car_width, engine_size, horse_power, drive_wheel_fwd,car_comp_buick):
 	X = car_df.iloc[:, :-1]
 	y = car_df['price']
