@@ -19,7 +19,7 @@ def num_map(series):
     return series.map(words_dict)
 
 # Loading the dataset.
-@st.cache_data
+
 def load_data():
     # Reading the dataset
     cars_df = pd.read_csv("car-prices.csv")
