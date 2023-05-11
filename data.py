@@ -5,9 +5,7 @@ import streamlit as st
 # Define a function 'app()' which accepts 'car_df' as an input.
 def app(car_df):
     st.header("View Data")
-    # Add an expander and display the dataset as a static table within the expander.
-    with st.container("View Dataset"):
-        st.table(car_df)
+    st.table(car_df)
 
 
     st.subheader("Columns Description:")
