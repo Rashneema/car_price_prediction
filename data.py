@@ -6,7 +6,7 @@ import streamlit as st
 def app(car_df):
     st.header("View Data")
     # Add an expander and display the dataset as a static table within the expander.
-    with st.expander("View Dataset"):
+    with st.container("View Dataset"):
         st.table(car_df)
 
 
