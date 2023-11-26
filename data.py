@@ -27,9 +27,9 @@ def app(car_df):
 
     # Add a checkbox in the second column. Display the column data-types of 'car_df' on the click of checkbox.
     with beta_col2: 
-        if st.checkbox("View rows & columns"):
-            st.metric("rows",car_df.shape[0])
-            st.metric("columns",car_df.shape[1])
+        if st.checkbox("View column data-type"):
+            st.table(car_df.dtypes)
+
 
     # Add a checkbox in the third column followed by a selectbox which accepts the column name whose data needs to be displayed.
     with beta_col3:
