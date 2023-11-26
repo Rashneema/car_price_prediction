@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 
 np.bool = np.bool_
+np.object = object
 
 # Define a function 'app()' which accepts 'car_df' as an input.
 def app(car_df):
