@@ -2,11 +2,13 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+np.bool = np.bool_
+
 # Define a function 'app()' which accepts 'car_df' as an input.
 def app(car_df):
     st.header("View Data")
-    #with st.beta_expander("View Dataset"):
-    st.table(car_df)
+    with st.beta_expander("View Dataset"):
+        st.table(car_df)
 
 
     st.subheader("Columns Description:")
